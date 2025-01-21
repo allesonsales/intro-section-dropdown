@@ -140,7 +140,6 @@ section {
     justify-content: space-around;
     gap: 2rem;
     padding: 2rem;
-    border: solid 1px red;
     height: 80vh;
 }
 
