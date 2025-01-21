@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="nav_left">
+        <a href="#" class="nav_logo">
+          <img src="./images/logo.svg" alt="Snap">
+        </a>
+        <div class="nav_desktop">
+          <div class="menu">
+            <ul>
+              <li>
+                <div class="inner_li" id="ftrDesk">
+                  <button class="btn_nav">Features</button>
+                  <div class="btn_arrow_down" id="ftrDeskDown"><i class="bi bi-chevron-down"></i></div>
+                  <div class="btn_arrow_up hide" id="ftrDeskUp"><i class="bi bi-chevron-up"></i></div>
+                </div>
+                <div class="dropdown_item hide" id="ftrDeskMenu">
+                  <ul>
+                    <li>
+                      <img src="./images/icon-todo.svg" alt="Todo List">
+                      <span>Todo List</span>
+                    </li>
+                    <li>
+                      <img src="./images/icon-calendar.svg" alt="Calendar">
+                      <span>Calendar</span>
+                    </li>
+                    <li>
+                      <img src="./images/icon-reminders.svg" alt="Reminders">
+                      <span>Reminders</span>
+                    </li>
+                    <li>
+                      <img src="./images/icon-planning.svg" alt="Planning">
+                      <span>Planning</span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="companyDesk">
+                <div class="inner_li">
+                  <button class="btn_nav">Company</button>
+                  <div class="btn_arrow_down" id="companyDeskDown"><i class="bi bi-chevron-down"></i></div>
+                  <div class="btn_arrow_up hide" id="companyDeskUp"><i class="bi bi-chevron-up"></i></div>
+                </div>
+                  <div class="dropdown_item hide" id="companyDeskMenu">
+                    <ul>
+                      <li>
+                        <span>History</span>
+                      </li>
+                      <li>
+                        <span>Our Team</span>
+                      </li>
+                      <li>
+                        <span>Blog</span>
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+              <li>
+                <button class="btn_nav">Carrers</button>
+              </li>
+              <li>
+                <button class="btn_nav">About</button>
+              </li>
+            </ul>   
+          </div>
+          <div class="nav_login">
+            <ul>
+              <li>
+                <button class="btn_nav">Login</button>
+              </li>
+              <li>
+                <button class="btn_nav">Register</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav_mobile">
+          <div class="nav_mobile_icon" id="btnMenu">
+            <i class="bi bi-list"></i>
+          </div>
+          <div class="nav_mobile_container hide" id="menuContainer">
+            <i class="bi bi-x-lg" id="clsMenu"></i>
+            <div class="menu">
+              <ul>
+                <li id="featureMobile">
+                  <div class="inner_li">
+                    <button class="btn_nav">Features</button>
+                    <div class="btn_arrow_down" id="arwDownMobileFtr"><i class="bi bi-chevron-down"></i></div>
+                    <div class="btn_arrow_up hide" id="arwUpMobileFtr"><i class="bi bi-chevron-up"></i></div>
+                  </div>
+                  <div class="dropdown_item hide" id="featuremobilemenu">
+                    <ul>
+                      <li>
+                        <img src="./images/icon-todo.svg" alt="Todo List">
+                        <span>Todo List</span>
+                      </li>
+                      <li>
+                        <img src="./images/icon-calendar.svg" alt="Calendar">
+                        <span>Calendar</span>
+                      </li>
+                      <li>
+                        <img src="./images/icon-reminders.svg" alt="Reminders">
+                        <span>Reminders</span>
+                      </li>
+                      <li>
+                        <img src="./images/icon-planning.svg" alt="Planning">
+                        <span>Planning</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li id="companyMobile">
+                  <div class="inner_li">
+                    <button class="btn_nav">Company</button>
+                    <div class="btn_arrow_down" id="arwDownMobileCompany"><i class="bi bi-chevron-down"></i></div>
+                    <div class="btn_arrow_up hide" id="arwUpMobileCompany"><i class="bi bi-chevron-up"></i></div>
+                  </div>
+                    <div class="dropdown_item hide" id="companyMobileMenu">
+                      <ul>
+                        <li>
+                          <span>History</span>
+                        </li>
+                        <li>
+                          <span>Our Team</span>
+                        </li>
+                        <li>
+                          <span>Blog</span>
+                        </li>
+                      </ul>
+                    </div>
+                </li>
+                <li>
+                  <button class="btn_nav">Carrers</button>
+                </li>
+                <li>
+                  <button class="btn_nav">About</button>
+                </li>
+              </ul>   
+            </div>
+            <div class="nav_login">
+              <ul>
+                <li>
+                  <button class="btn_nav">Login</button>
+                </li>
+                <li>
+                  <button class="btn_nav">Register</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="content">
+        <h1>Make remote Work</h1>
+        <span>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</span>
+          <button>Learn More</button>
+          <div class="content_logo" >
+            <img src="./images/client-databiz.svg" alt="Databiz">
+            <img src="./images/client-audiophile.svg" alt="Audio Phile">
+            <img src="./images/client-meet.svg" alt="Meet">
+            <img src="./images/client-maker.svg" alt="Maker">
+          </div>
+      </div>
+      <div class="content_img">
+        <div class="content_img_desk">
+          <img src="./images/image-hero-desktop.png" alt="Make remote Work">
+        </div>
+        <div class="content_img_mobile">
+          <img src="./images/image-hero-mobile.png" alt="Make remote Work">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alleson Sales</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
