@@ -18,7 +18,7 @@ ftrDesk.addEventListener ('mouseenter', () => {
     ftrDeskUp.classList.remove ('hide');
 })
 
-ftrDeskMenu.addEventListener ('mouseleave', () => {
+ftrDesk.addEventListener ('mouseleave', () => {
     ftrDeskMenu.classList.add ('hide');
     ftrDeskDown.classList.remove ('hide');
     ftrDeskUp.classList.add ('hide');
@@ -30,7 +30,7 @@ companyDesk.addEventListener ('mouseenter', () => {
     companyDeskUp.classList.remove ('hide');
 })
 
-companyDeskMenu.addEventListener ('mouseleave', () => {
+companyDesk.addEventListener ('mouseleave', () => {
     companyDeskMenu.classList.add ('hide');
     companyDeskDown.classList.remove ('hide');
     companyDeskUp.classList.add ('hide');
